@@ -1,8 +1,5 @@
 /*  your css code here. If applicable */
-/* The Modal (background) */
-#myModal{
-	display:none;
-}
+/* Modal container */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -15,31 +12,42 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* The Close Button */
+/* Modal Header */
+.modal-header {
+  padding: 10px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Close Button */
 .close-modal {
-  color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
+  color: white;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .close-modal:hover,
 .close-modal:focus {
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* Show the modal when the target is the modal ID */
-:target {
-  display: block;
+/* Modal Body */
+.modal-body {
+  padding: 10px 16px;
 }
